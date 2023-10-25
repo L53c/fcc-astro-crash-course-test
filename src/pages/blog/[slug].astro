@@ -39,7 +39,7 @@ const {Content} = await post.render()
   <Main>
     <H1 text={post.data.title} />
     <Image 
-      src={post.data.image} 
+      src={post.data.image as string} 
       width={1024} 
       height={100 / 1.5}
       format="avif"
@@ -51,5 +51,3 @@ const {Content} = await post.render()
     </div>
   </Main>
 </MainLayout>
-
-<!-- https://youtu.be/e-hTm5VmofI?t=4094 -->
